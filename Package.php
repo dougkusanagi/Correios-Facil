@@ -21,7 +21,7 @@ class Package{
      *
      * @return  self
      */ 
-    public function setWeight($weight)
+    public function setWeight(string $weight)
     {
         $this->weight = $weight;
 
@@ -41,7 +41,7 @@ class Package{
      *
      * @return  self
      */ 
-    public function setHeight($height)
+    public function setHeight(string $height)
     {
         $this->height = $height;
 
@@ -61,7 +61,7 @@ class Package{
      *
      * @return  self
      */ 
-    public function setWidth($width)
+    public function setWidth(string $width)
     {
         $this->width = $width;
 
@@ -81,7 +81,7 @@ class Package{
      *
      * @return  self
      */ 
-    public function setLength($length)
+    public function setLength(string $length)
     {
         $this->length = $length;
 
@@ -101,7 +101,7 @@ class Package{
      *
      * @return  self
      */ 
-    public function setDiameter($diameter)
+    public function setDiameter(string $diameter)
     {
         $this->diameter = $diameter;
 
@@ -121,7 +121,7 @@ class Package{
      *
      * @return  self
      */ 
-    public function setFormat($format)
+    public function setFormat(string $format)
     {
         $this->format = $format;
 
