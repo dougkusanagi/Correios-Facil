@@ -6,7 +6,7 @@ class Package{
     private string $width;
     private string $length;
     private string $diameter;
-    private string $format;
+    private string $format = '1';
 
     /**
      * Get the value of weight

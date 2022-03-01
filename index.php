@@ -34,5 +34,8 @@ $contrato->setCodAdministrativo('123456789');
 $contrato->setSenha('senha');
 
 $correios = new Correios();
-$correios->calculateDelivery($package);
 // $correios->configContract($contratoCorreios);
+$correios->setCodServico(Correios::SERVICO_PAC);
+$correios->setZipcodeFrom('09010100');
+$correios->setZipcodeTo('24310430');
+$correios->calculateDelivery($package);
