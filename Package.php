@@ -6,6 +6,7 @@ class Package{
     private string $width;
     private string $length;
     private string $diameter;
+    private string $format;
 
     /**
      * Get the value of weight
@@ -103,6 +104,26 @@ class Package{
     public function setDiameter($diameter)
     {
         $this->diameter = $diameter;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of format
+     */ 
+    public function getFormat()
+    {
+        return $this->format;
+    }
+
+    /**
+     * Set the value of format
+     *
+     * @return  self
+     */ 
+    public function setFormat($format)
+    {
+        $this->format = $format;
 
         return $this;
     }
