@@ -1,5 +1,7 @@
 # Correios-Facil
- Modulo dos Correios para Prestashop
+ Esse será um Modulo dos Correios para Prestashop
+
+Por enquanto implementei apenas o cálculo do frete com e sem contrato
 
 ```php
 <?php
