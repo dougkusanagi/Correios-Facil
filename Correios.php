@@ -73,8 +73,6 @@ class Correios
     {
         $this->setPackageProperties($package);
 
-        $this->hasContract;
-
         $params = $this->getParams();
 
         $params = http_build_query($params);
