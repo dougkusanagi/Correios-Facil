@@ -18,7 +18,6 @@ class Correios
         '04804' => 'SERVICO_SEDEXHOJE',
     ];
 
-    private bool $hasContract = false;
     private string $codigoAdministrativo = '';
     private string $senha = '';
     private string $codServico;
@@ -34,6 +33,7 @@ class Correios
     private string $valorDeclarado = '0';
     private string $avisoRecebimento = 'n';
     private string $tipoRetornoRequisicao = 'xml';
+    private $result;
 
     private $paramNames = [
         'codigoAdministrativo' => 'nCdEmpresa',
@@ -81,9 +81,12 @@ class Correios
 
         $urlCalculaPrazo = self::URL_CORREIOS . '/CalcPrecoPrazo.aspx?' . $params;
 
-        $xml = simplexml_load_file($urlCalculaPrazo);
+        $this->result = simplexml_load_file($urlCalculaPrazo);
+    }
 
-        var_dump($xml);
+    public function getResult()
+    {
+        return $this->result;
     }
 
     public function setCodServico(string $codServico)

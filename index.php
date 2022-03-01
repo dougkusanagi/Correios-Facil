@@ -39,3 +39,5 @@ $correios->setCodServico(Correios::SERVICO_PAC);
 $correios->setZipcodeFrom('09010100');
 $correios->setZipcodeTo('24310430');
 $correios->calculateDelivery($package);
+
+var_dump($correios->getResult());
